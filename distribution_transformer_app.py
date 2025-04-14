@@ -4,7 +4,7 @@ import io
 import re
 
 # ---- Page config ----
-st.set_page_config(page_title="Service Distribution Transformer",
+st.set_page_config(page_title="Models Transformer",
                    page_icon="politex.ico",
                    layout="wide")
 
