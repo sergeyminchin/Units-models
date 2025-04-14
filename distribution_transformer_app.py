@@ -8,7 +8,7 @@ st.set_page_config(page_title="Service Distribution Transformer",
                    page_icon="politex.ico",
                    layout="wide")
 
-st.image("logo.png", use_container_width=True)
+st.image("logo.png", use_container_width=False)
 st.title("\U0001F4C2 Service Distribution Transformer")
 st.markdown("Upload an Excel file and get an updated version with normalized \"מק\"ט\" and \"תאור\" values.")
 
