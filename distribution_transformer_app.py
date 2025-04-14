@@ -8,7 +8,7 @@ st.set_page_config(page_title="Service Distribution Transformer",
                    page_icon="politex.ico",
                    layout="wide")
 
-st.image("logo.png", use_column_width=False)
+st.image("logo.png", use_container_width=True)
 st.title("\U0001F4C2 Service Distribution Transformer")
 st.markdown("Upload an Excel file and get an updated version with normalized \"מק\"ט\" and \"תאור\" values.")
 
@@ -54,7 +54,7 @@ if uploaded_file is not None:
 
             # Export logic
             output = io.BytesIO()
-            df.to_excel(output, index=False, encoding='utf-8-sig')
+            df.to_excel(output, index=False)
             output.seek(0)
 
             st.download_button("\U0001F4E5 Download Updated Excel",
